@@ -122,7 +122,7 @@ public final class Iso639 {
 			Entry<String, String[]> entry = iterator.next();
 			for (String c : entry.getValue()) {
 				if (code.equalsIgnoreCase(c)) {
-					return entry.getValue()[entry.getValue().length - 1].toLowerCase();
+					return entry.getValue()[entry.getValue().length - 1].toLowerCase(Locale.ROOT);
 				}
 			}
 		}
